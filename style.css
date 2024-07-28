@@ -1,0 +1,277 @@
+body {
+    font-family: "Comic Neue", cursive;
+    background: linear-gradient(#f8edeb, #f9e5d8);
+}
+
+.form_1 {
+    font-size: 1.2em;
+    color: #e8a598;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.password_1, .email_1 {
+    padding: 10px;
+    border: 2px solid #e8a598;
+    width: 200px;
+    height: 5px;
+}
+
+p {
+    margin: 50px;
+    font-size: 1em;
+    font-style: italic;
+    text-align: justify;
+    color: #ffb5a7;
+}
+
+.menu {
+    background-color: #e8a598;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.ma_classe {
+    color: #ffb5a7;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ffb5a7;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #fcd5ce;
+}
+
+.ma_classe_2 {
+    color: #e8a598;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+    color: #f8edeb;
+    padding: 50px;
+    background-image: url("cute_cat.jpg");
+    background-position: center;
+    opacity: 0.6;
+    text-shadow: 6px 6px 10px #e8a598;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #e8a598;
+}
+
+ul {
+    color: #fec89a;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+img {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.link {
+    color: #ffb5a7;
+}
+
+.link:hover {
+    color: #e8a598;
+    text-decoration: underline;
+}
+
+.link:active {
+    text-decoration-color: #99c1de;
+}
+
+.link:focus {
+    background-color: #99c1de;
+    color: white;
+    outline-color: #5aa9e6;
+}
+
+.bloc {
+    color: #ffb5a7;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ffb5a7;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+.global {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.one {
+    order: 6;
+}
+
+.two {
+    order: 5;
+    flex: 1;
+}
+
+.three {
+    order: 4;
+}
+
+.four {
+    order: 3;
+}
+
+.five {
+    order: 2;
+    flex: 1;
+}
+
+.six {
+    order: 1;
+}
+
+.conteneur_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 150px 300px;
+    gap: 20px;
+}
+
+.thirteen {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+}
+
+td, th, caption {
+    border: 1px solid #ffb5a7;
+    background-color: white;
+    text-align: center;
+}
+
+caption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    color: #ffb5a7;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    color: #ffb5a7;
+
+}
+
+th {
+    text-decoration: underline;
+    font-size: 1.2em;
+    height: 50px;
+    width: 300px;
+}
+
+td {
+    font-size: 1em;
+    height: 50px;
+    width: 300px;
+}
+
+.form_2 {
+    margin: 50px auto;
+}
+
+.legend_1, .legend_2 {
+    background-color: white;
+}
+
+.field_1 {
+    margin: 10px auto;
+}
+
+.field_1, .field_2 {
+    background-color: #f8edeb;
+    color: #e8a598;
+    border: 1px solid #e8a598;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.field_1 {
+    display: flex;
+    gap: 20px;
+}
+
+.prenom_1, .nom_1, .email_2 {
+    border: 1px solid #e8a598;
+    background-color: #fcd5ce;
+}
+
+.form_text_1 {
+    color: #e8a598;
+    font-style: normal;
+    margin: 15px auto;
+}
+
+.textarea_1 {
+    display: flex;
+    margin-left: 120px;
+    border: 1px solid #e8a598;
+    height: 100px;
+    width: 400px;
+    background-color: #fcd5ce;
+}
+
+.button_1 {
+    margin: 5px auto;
+    border: 1px solid white;
+    padding: 10px 25px;
+    width: inherit;
+    height: inherit;
+    color: white;
+    background-color: #e8a598;
+}
+
+@media screen and (max-width: 1200px) {
+    p {
+        color: rgb(88, 79, 116);
+    }
+    .conteneur {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    img {
+        display: none;
+    }
+}
